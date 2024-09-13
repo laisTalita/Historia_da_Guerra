@@ -7,14 +7,22 @@
     padding: 0px;
 
 }
-
-:root{
+/*:root{
     --cor1:#dfcda9df;
      --cor2:#8C7C5D; 
-    --cor3:#40382A;
-    --cor4: #f27730cc;
+    --cor3:#403022;
+    --cor4: #c2622acc;
     --cor5: #151515;
 }
+
+*/
+ :root{
+    --cor1:#d2c09cf4;
+     --cor2:#9a8865; 
+    --cor3:#332d24;
+    --cor4: #f27430cc;
+    --cor5: #151515;
+} 
 body{
     display: flex;
     flex-direction: column;
@@ -56,11 +64,10 @@ nav >a:hover{
 }
 .guerra{
     border-radius: 10px;
-    width: 20%;
-    min-width: 260px;
-    min-height: 257px;
-    height: 49vh;
-    padding: 2px;
+    width: 17%;
+    min-width: 220px;
+    height: 270px;
+    padding: 1px;
     margin: 4% 2.3%;
     background-color:var(--cor1) ;
     position: relative;
@@ -72,7 +79,7 @@ main{
     margin: 0px auto;
     text-align: center;
     flex: 1;
-    background-color: #000000c1;
+    background-color: #000000a8;
 }
 
 section{
@@ -91,7 +98,6 @@ section{
 .guerra button{
     background-color: var(--cor4);
     border:1px solid rgba(255, 255, 255, 0.418);
-
     position: absolute;
     width: 50%;
     font-size: 1em;
@@ -120,5 +126,5 @@ footer{
     text-align: center;
     color: var(--cor5);
     padding: 2px;
-    border-top: 1px solid  rgba(255, 255, 255, 0.283);
+    border-top: 1px solid  rgba(255, 255, 255, 0.347);
 }
