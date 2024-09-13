@@ -7,22 +7,34 @@
     padding: 0px;
 
 }
-/*:root{
-    --cor1:#dfcda9df;
-     --cor2:#8C7C5D; 
-    --cor3:#403022;
-    --cor4: #c2622acc;
-    --cor5: #151515;
-}
 
-*/
- :root{
-    --cor1:#d2c09cf4;
-     --cor2:#9a8865; 
-    --cor3:#332d24;
-    --cor4: #f27430cc;
+ /* :root{
+    --cor1:#f1e2c5f4;
+    
+    --cor4: #f27430cc; 
     --cor5: #151515;
-} 
+}  */
+
+/*
+:root{
+    --cor1:#F2EDDC;
+     --cor2:#bfb7a8b3;
+    --cor3:#8C8070;
+    --cor4: #4c6069;
+    --cor5: #151515;
+} */
+
+:root{
+    --cor1:#d7cdb7fb;
+    --cor2:#c1ac82; 
+    --cor3:#231f17;
+    --cor4: #4c6069;
+
+    --cor5: #151515;
+
+
+
+}
 body{
     display: flex;
     flex-direction: column;
@@ -38,51 +50,60 @@ html{
 }
 
 header{
-    color: var(--cor1);
-    height: 40px;
+    color: var(--cor2);
+    height: 50px;
     background-color:var(--cor3);
+    box-shadow: inset 5px 7px 25px rgba(0, 0, 0, 0.226);
 }
 header p{
     font-size: 1.3em;
-    margin: 6px 20px;
+    margin: 12px 20px;
 }
 nav{
+    box-shadow:inset 1px 6px 10px rgba(0, 0, 0, 0.228);
     background-color: var(--cor2);
     height: 24px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.416);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.17);
     }
 nav >a{
     font-size: 1.2em;
+    color: black;
     padding:1px;
-    color:var(--cor5);
     text-decoration: none;
     margin: 1px 2%;  
 }
 nav >a:hover{
-    background-color: #40382a69;
+    background-color: #40382a88;
     
 }
+
+
 .guerra{
     border-radius: 10px;
-    width: 17%;
-    min-width: 220px;
-    /* height: 270px; */
+    width: 19%;
+    min-width: 230px;
     padding: 1px;
-    margin: 4% 2.3%;
-    background-color:var(--cor1) ;
+    margin: 4%;
+    background-color: var(--cor1);
+    border: 1px solid var(--cor5);
     position: relative;
-    transition: 0.3s;    
+    transition: 0.1s;    
+    box-shadow: 5px 6px 7px rgba(0, 0, 0, 0.298);
 }
+
 main{
-    padding-top: 70px;
+    padding: 50px 0px;
     width: 100%;
-    margin: 0px auto;
     text-align: center;
     flex: 1;
-    background-color: #000000d0;
+    background-color: #000000b4;
 }
 
 section{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     justify-content: center;    
     display: flex;
     flex-wrap: wrap;
@@ -122,7 +143,7 @@ hr{
     margin-bottom: 4%;
 }
 footer{
-    background-color: var(--cor2);
+    background-color: var(--cor1);
     font-size: 1.1em;
     text-align: center;
     color: var(--cor5);
