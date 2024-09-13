@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>História da Guerra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+       <p>&lt; Lais Talita /&gt;</p>
+    </header>
+    <nav>
+        <a href="#">Portifólio</a>
+        <a href="#">Contato </a>
+        <a href="#">Linkedin</a>
+        <a href="#">Github</a>
+    </nav>
+  
+
+    <main>
+      
+            <!-- <h1>Histórias de guerras</h1> -->
+        <section>
+        
+            
+            <div class="guerra"><img src="imagens/guerraPeloponeso.png" alt="">
+                <p>Guerras antigas  </p>
+                <ul>
+                    <li>Persas</li>
+                    <hr>
+                    <li>Napoleônicas</li>
+                    <hr>
+                    <li>Púnicas</li>
+                    <hr>
+
+                </ul>
+             <a href=""><button> Acessar</button></a>
+            </div>
+
+            <div class="guerra"><img src="imagens/ca.jpg" alt="">
+                <p> Guerras Modernas  </p>
+                <ul>
+                    <li>Primeira Guerra M</li>
+                    <hr>
+                    <li>Segunda Guerra M</li>
+                    <hr>
+                    <li>Guerra do Vietnã</li>
+                    <hr>
+
+                </ul>
+                <a href=""><button>Acessar</button> </a>
+            </div>
+
+            <div class="guerra"><img src="imagens/guerraF.jpg" alt="">
+
+                <p> Guerra Fria  </p>
+                <ul>
+                    <li>Conflitos indiretos</li>
+                    <hr>
+                    <li>Corrida Armamentista</li>
+                    <hr>
+                    <li>Muro de Berlim</li>
+                    <hr>
+
+                </ul>
+            <a href=""><button>Acessar</button></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Criado por : Lais Talita</p>
+    </footer>
+
+    <script> 
+         var divs = document.querySelectorAll('.guerra')
+
+
+         divs.forEach(function(div){
+            var links =div.querySelector('a')
+
+
+            div.addEventListener('mouseover', function(){
+                links.style.display='block'
+
+            })
+             
+            div.addEventListener('mouseout', function(){ 
+                links.style.display='none'
+
+
+            })
+        })
+    </script>
+
+ 
+</body>
+</html>
