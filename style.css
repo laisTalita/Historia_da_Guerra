@@ -79,7 +79,7 @@ main{
     margin: 0px auto;
     text-align: center;
     flex: 1;
-    background-color: #000000a8;
+    background-color: #000000d0;
 }
 
 section{
@@ -94,6 +94,7 @@ section{
 }
 .guerra:hover{
     background-color: rgba(0, 0, 0, 0.622);
+    border: 1px solid rgba(0, 0, 0, 0.863);
 }
 .guerra button{
     background-color: var(--cor4);
