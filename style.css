@@ -26,7 +26,7 @@
 
 :root{
     --cor1:#d7cdb7fb;
-    --cor2:#c1ac82; 
+    --cor2:#d9c49a; 
     --cor3:#231f17;
     --cor4: #4c6069;
 
@@ -88,7 +88,7 @@ nav >a:hover{
     border: 1px solid var(--cor5);
     position: relative;
     transition: 0.1s;    
-    box-shadow: 5px 6px 7px rgba(0, 0, 0, 0.298);
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.333);
 }
 
 main{
@@ -96,7 +96,7 @@ main{
     width: 100%;
     text-align: center;
     flex: 1;
-    background-color: #000000b4;
+    background-color: #000000ac;
 }
 
 section{
@@ -125,6 +125,7 @@ section{
     font-size: 1em;
     top: 80%;
     transform: translate(-50%,-50%);
+    border-radius: 10px;
 }
 .guerra  p{
     margin: 1%  0px 6% 0px;
