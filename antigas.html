@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body id="bodyAntigas">
+        <header>
+            <nav>
+                <a href="#">Menu</a>
+
+                <ul class="links" id="menuL">
+                    <li><a href="#assunto1">Guerras Persas</a></li>
+                    <hr>
+                    <li><a href="#assunto2">Guerras Napoleônica</a></li>
+                     <hr>
+                    <li><a href="#assunto3">Guerras Púnicas</a></li>
+                </ul>
+               
+                <i id="icone" class='bx bx-menu-alt-right'></i>
+            </nav>
+         </header>
+       
+    <main>
+        <section>
+       
+        </section>
+
+
+</main>
+<footer>
+  <p>Criado por: Lais Talita</p>
+</footer>
+
+<script>
+  
+  var menuIcon = document.getElementById('icone');
+  var ulMenu = document.getElementById('menuL');
+  
+  menuIcon.addEventListener('click', function(event) {
+      event.stopPropagation();
+      ulMenu.classList.toggle('show');
+  });
+  document.addEventListener('click', function(event) {
+      if (!ulMenu.contains(event.target) && event.target !== menuIcon && !menuIcon.contains(event.target)) {
+          ulMenu.classList.remove('show');
+      }
+  });
+   
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
