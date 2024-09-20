@@ -12,14 +12,14 @@
 <body id="bodyAntigas">
         <header>
             <nav>
-                <a href="#">Menu</a>
+                <a href="index.html">Menu</a>
 
                 <ul class="links" id="menuL">
-                    <li><a href="#assunto1">Guerras Persas</a></li>
+                    <li><a href="#" onclick="mostrar('div1')">Guerras Persas</a></li>
                     <hr>
-                    <li><a href="#assunto2">Guerras Napoleônica</a></li>
+                    <li><a href="#" onclick="mostrar('div2')">Guerras Napoleônica</a></li>
                      <hr>
-                    <li><a href="#assunto3">Guerras Púnicas</a></li>
+                    <li><a href="#" onclick="mostrar('div3')">Guerras Púnicas</a></li>
                 </ul>
                
                 <i id="icone" class='bx bx-menu-alt-right'></i>
@@ -27,8 +27,90 @@
          </header>
        
     <main>
+
+        <h1>Histórias Antigas</h1>
         <section>
-       
+            <div id="div1" class="conteudo">
+
+                    <div id="p1" class="ativo">
+                        <p>oi</p>
+                        <p>Página 1</p>
+
+                        <button onclick="alterna('p1', 'p2')">Próxima</button>
+                    </div>  
+
+
+                    <div id="p2" class="conteudo">
+                        <p>sdlkldfj</p>
+                        <p>Página 2</p>
+
+                        <button onclick="alterna('p2','p1')">Voltar</button>
+                        <button onclick="alterna('p2','p3')">Próxima</button>
+
+                    </div> 
+
+                 <div id="p3" class="conteudo">
+                        <p>sdlkldfj</p>
+                        <p>Página 3</p>
+
+                        <button onclick="alterna('p3','p2')">Voltar</button>
+
+                    </div>  
+             
+            </div>
+
+            <div id="div2"class="conteudo">
+
+                    <div id="n" class="ativo">
+                        <p>dfldff</p>
+                        <p>Página 1</p>
+                        <button onclick="alterna('n','n2')">Próxima</button>
+                    </div>  
+                    <div id="n2" class="conteudo">
+                        <p>dfjlfj</p>
+                        <p>Página 2</p>
+
+                        <button onclick="alterna('n2','n')">Voltar</button>
+                        <button onclick="alterna('n2','n3')">Próxima</button>
+
+                    </div> 
+                    <div id="n3" class="conteudo">
+                        <p>dfjlfj</p>
+                        <p>Página 3</p>
+
+                        <button onclick="alterna('n3','n2')">Voltar</button>
+                    </div> 
+            </div>
+
+            <div id="div3"class="conteudo">
+
+                    <div id="p" class="ativo">
+                        <p>flxfkklx</p>
+                        <p>Página 1</p>
+
+                        <button onclick="alterna('p','pp2')">Próxima</button>
+                   
+                    </div> 
+
+                    <div id="pp2" class="conteudo">
+                        <h2> cont 3 pag 2</h2>
+                        <p>fdfio</p>
+                        <p>Página 2</p>
+
+                        <button onclick="alterna('pp2','p')">Voltar</button>
+                        <button onclick="alterna('pp2','pp3')">Próxima</button>
+                   
+
+                    </div> 
+                    <div id="pp3" class="conteudo">
+                        <p>fdfio</p>
+                        <p>Página 3</p>
+                        <button onclick="alterna('pp3','pp2')">Voltar</button>
+                   
+
+                    </div>
+            </div>
+
         </section>
 
 
@@ -52,10 +134,28 @@
       }
   });
    
+function mostrar(div){
 
+    var sec= document.querySelector('section')
+    sec.style.display='block'
 
+    var h= document.querySelector('h1')
+    h.style.display='none'
+    var conteudo = document.querySelectorAll('.conteudo')
 
+    conteudo.forEach(conte =>conte.classList.remove('ativo'))
 
+    var contAtivo = document.getElementById(div)
+    contAtivo.classList.add('ativo')
+
+}
+function alterna(div1,div2) {
+    var primeiro= document.getElementById(div1)
+    primeiro.style.display='none'
+
+    var segundo= document.getElementById(div2)
+    segundo.style.display='block'
+}
 
 
 
