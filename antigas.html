@@ -11,8 +11,16 @@
 </head>
 <body id="bodyAntigas">
         <header>
+            <div>
+                <a id="ind" href="index.html">Menu</a>
+                <div id="dir">
+                    <a href="">Guerras Modernas</a>
+                    <hr>
+                    <a href="">Guerra Fria</a>
+                </div>
+            </div>
             <nav>
-                <a href="index.html">Menu</a>
+                <i id="icone" class='bx bx-menu-alt-left'></i>
 
                 <ul class="links" id="menuL">
                     <li><a href="#"  onclick="mostrar('div1')">Guerras Persas</a></li>
@@ -21,13 +29,13 @@
                      <hr>
                     <li><a href="#"  onclick="mostrar('div3')">Guerras Púnicas</a></li>
                 </ul>
-               
-                <i id="icone" class='bx bx-menu-alt-right'></i>
             </nav>
-         </header>
+            
+        </header>
+        
        
     <main>
-        <h1>Histórias Antigas</h1>
+         <h1>Histórias Antigas</h1> 
         <section>
             <div id="div1" class="conteudo">
                 <div id="p1" class="ativo">
@@ -537,30 +545,38 @@
 function mostrar(divs){
     var sec= document.querySelector('section')
     sec.style.display='flex'
-    var h= document.querySelector('h1')
-    h.style.display='none'
-
     var conteudo = document.querySelectorAll('.conteudo')
     conteudo.forEach(conte =>conte.classList.remove('ativo'))
+    var h1 =  document.querySelector('h1')
+
  
     var contAtivo = document.getElementById(divs)
     contAtivo.classList.add('ativo')
+    h1.style.display='none'
 
     var footer = document.querySelector('footer')
+    var hrs= document.querySelectorAll('hr')
     var head= document.querySelector('header')
-    if (footer && head) {
+
+    function alteracor(cor) {
+        hrs.forEach(function (hr){
+            hr.style.borderColor=cor
+        })  
+    }
+    if (footer && head && hrs) {
         if (divs === 'div1') {
             footer.style.backgroundColor='#3e5662'
             footer.style.color='black'
-
+            alteracor('#3e5662')
         }else if (divs==='div2') {
             footer.style.backgroundColor= ' rgb(136, 49, 49)'
             footer.style.color='black'
+            alteracor('#883131')
 
         }else if (divs==='div3') {
             footer.style.backgroundColor= '#231f17'
             footer.style.color='white'
-            
+            alteracor('#795e28')  
         }
     }
 }
