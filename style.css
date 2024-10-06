@@ -146,7 +146,7 @@ main{
     display:none;
     position: absolute;
     left: 20px;
-    top: 49px;
+    top: 40px;
     font-size: 1.5em;
 }
 #bodyAntigas hr{
@@ -344,10 +344,10 @@ footer{
     }
     .links{
        position: absolute;
-       top: 66px;
-       left: 7%;
+       top: 69px;
+       left: 5%;
        text-align: left;
-       background-color:rgba(0, 0, 0, 0.673);
+       background-color:rgba(0, 0, 0, 0.9);
        border: 1px solid var(--cor5);
        max-width: 140px;
        flex-wrap: wrap;
