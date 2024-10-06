@@ -68,7 +68,7 @@ main{
     display: flex;
     flex-direction: column;
     box-shadow: none;
-    height: 62px;
+    height: 67px;
     background-color: #000000bd;
     box-shadow: inset 2px 20px 40px rgba(0, 0, 0, 0.942);
     position: relative;
@@ -84,7 +84,7 @@ main{
 }
 #dir{
     position: absolute;
-    right: 5%;   
+    right: 3%;   
     top: 2px;
 }
 #bodyAntigas header div >a{
@@ -131,7 +131,7 @@ main{
 .links {
     position: relative;
     left: auto;
-    padding: 3px 10px;
+    padding:  10px;
     display: flex;
     z-index: 10;
 }
@@ -146,7 +146,7 @@ main{
     display:none;
     position: absolute;
     left: 20px;
-    top: 37px;
+    top: 49px;
     font-size: 1.5em;
 }
 #bodyAntigas hr{
@@ -156,47 +156,14 @@ main{
     margin: 0px 8px;
 }
 #dir> hr{
-    margin: 10px 20px ;
+    margin: 10px 5px ;
 }
 hr{
     border: 1px solid rgba(7, 7, 7, 0.257);
     margin-bottom: 4%;
     transition: 0.6s;
 }
-@media (max-width : 700px) {
-    #bodyAntigas hr{
-        display: none;
-    }
-    #dir hr{
-        display: block;
-    }
-    #icone{
-        display:block;
-    }
-    .links{
-       position: absolute;
-       top: 60px;
-       left: 7%;
-       text-align: left;
-       background-color:var(--cor5);
-       max-width: 140px;
-       flex-wrap: wrap;
-       padding: 10px;
-       display: none;
-       z-index: 10;
-    }
-    .links.show{
-        display: block;
-    }
-    .links li{
-        margin:2px; 
-        padding: 1px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.232);
-    }
-    .links li:hover{
-        background-color: #000000;
-    }
-}
+
 #bodyIndex nav>a:hover{
     background-color: #40382a88;
 }
@@ -364,4 +331,39 @@ footer{
     padding: 2px;
     border-top: 1px solid  rgba(255, 255, 255, 0.347);
     transition: 0.6s;
+}
+@media (max-width : 700px) {
+    #bodyAntigas hr{
+        display: none;
+    }
+    #dir hr{
+        display: block;
+    }
+    #icone{
+        display:block;
+    }
+    .links{
+       position: absolute;
+       top: 66px;
+       left: 7%;
+       text-align: left;
+       background-color:rgba(0, 0, 0, 0.673);
+       border: 1px solid var(--cor5);
+       max-width: 140px;
+       flex-wrap: wrap;
+       padding: 10px;
+       display: none;
+       z-index: 10;
+    }
+    .links.show{
+        display: block;
+    }
+    .links li{
+        margin:2px; 
+        padding: 1px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.232);
+    }
+    .links li:hover{
+        background-color: #000000;
+    }
 }
