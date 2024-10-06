@@ -34,7 +34,7 @@ header{
     box-shadow:inset 1px 6px 10px rgba(0, 0, 0, 0.228);
     height: 24px;
 }
-nav >a{
+nav a{
     font-size: 1.2em;
     color: black;
     padding:1px;
@@ -68,39 +68,35 @@ main{
     display: flex;
     flex-direction: column;
     box-shadow: none;
-    height: 60px;
+    height: 62px;
     background-color: #000000bd;
     box-shadow: inset 2px 20px 40px rgba(0, 0, 0, 0.942);
     position: relative;
+    padding: 2px;
 }
- #bodyAntigas header div {
-    margin-top: -2px;
+#bodyAntigas header div {
+    margin-top: 2px;
     display: flex;
     flex-direction: row;
 }
-#bodyAntigas header >div {
+#bodyAntigas header #td{
     box-shadow:1px 1px 4px rgba(1, 1, 1, 0.227);
-
 }
 #dir{
     position: absolute;
     right: 5%;   
     top: 2px;
 }
-
 #bodyAntigas header div >a{
  color:  var(--cor2);
  text-decoration: none;
  font-size: 1.1em;
- margin-left: 18px;
- margin-top: 10px;
- padding: 2px;
+ padding: 10px 5px 1px 20px;
  cursor: pointer;
 }
 #ind{
     color: white;
     font-family: var(--Family);
-
 }
 #bodyIndex header p{
     font-family: var(--Family);
@@ -114,14 +110,11 @@ main{
     background-color: var(--cor2);
     border-bottom: 1px solid rgba(255, 255, 255, 0.17);
 }
-#bodyAntigas nav{
-    margin-top: 6px;
-}
 #bodyAntigas header a{
     color: var(--cor2);
     font-size: 1.1em;
-    padding: 0px 3px;
-   text-decoration: none; 
+    padding: 3px;
+    text-decoration: none; 
 }
 
 #bodyAntigas h1{
@@ -136,24 +129,25 @@ main{
     transform: translate(-50%,-50%);
 }
 .links {
-    margin: 1px 13px;
+    position: relative;
+    left: auto;
+    padding: 3px 10px;
     display: flex;
     z-index: 10;
-
 }
 .links a{
     margin: 10px 2px;
 }
 .links li{
     list-style-type: none;
-    font-size: 1em;
 }
 #icone{
     cursor: pointer;
     display:none;
     position: absolute;
-    left: 3%;
-    font-size: 1.4em;
+    left: 20px;
+    top: 37px;
+    font-size: 1.5em;
 }
 #bodyAntigas hr{
     z-index: 10;
@@ -162,48 +156,42 @@ main{
     margin: 0px 8px;
 }
 #dir> hr{
-    margin: 14px 20px ;
+    margin: 10px 20px ;
 }
-
 hr{
     border: 1px solid rgba(7, 7, 7, 0.257);
     margin-bottom: 4%;
     transition: 0.6s;
-
 }
 @media (max-width : 700px) {
-
     #bodyAntigas hr{
         display: none;
     }
     #dir hr{
         display: block;
     }
-
     #icone{
-        display:inline;
+        display:block;
     }
-    
     .links{
-        position: absolute;
-       top: 70px;
+       position: absolute;
+       top: 60px;
+       left: 7%;
        text-align: left;
        background-color:var(--cor5);
-       max-width: 150px;
+       max-width: 140px;
        flex-wrap: wrap;
        padding: 10px;
        display: none;
        z-index: 10;
     }
-
     .links.show{
         display: block;
     }
     .links li{
-        margin:4px; 
-        margin: 2%;
+        margin:2px; 
         padding: 1px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.173);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.232);
     }
     .links li:hover{
         background-color: #000000;
